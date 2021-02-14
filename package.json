@@ -1,0 +1,44 @@
+{
+  "name": "jest-supertest",
+  "version": "1.0.0",
+  "description": "My first Jest Project",
+  "main": "index.js",
+  "jest": {
+    "verbose": true,
+    "testSequencer": "/JestAutomation/jest-supertest/testSequencer.js",
+    "coverageDirectory": "/JestAutomation/jest-supertest/coverage/my_reports/",
+    "coverageReporters": [
+      "html",
+      "text"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "scripts": {
+    "test": "jest --reporters default jest-stare --coverage --detectOpenHandles --runInBand --testTimeout=30000",
+    "test:watch": "jest --verbose --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshitag90/jest-supertest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harshitag90/jest-supertest/issues"
+  },
+  "homepage": "https://github.com/harshitag90/jest-supertest#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "jest-serial-runner": "^1.1.0",
+    "jest-stare": "^2.2.1",
+    "supertest": "^6.1.3"
+  }
+}
