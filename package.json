@@ -4,6 +4,7 @@
   "description": "My first Jest Project",
   "main": "index.js",
   "jest": {
+    "testURL":"https://feedjar.herokuapp.com/",
     "verbose": true,
     "testSequencer": "/JestAutomation/jest-supertest/testSequencer.js",
     "coverageDirectory": "/JestAutomation/jest-supertest/coverage/my_reports/",
@@ -21,7 +22,7 @@
     }
   },
   "scripts": {
-    "test": "jest --reporters default jest-stare --coverage --detectOpenHandles --runInBand --testTimeout=30000",
+    "test": "jest --reporters default jest-stare --coverage --detectOpenHandles --runInBand --testTimeout=60000",
     "test:watch": "jest --verbose --watchAll"
   },
   "repository": {
@@ -35,10 +36,10 @@
     "url": "https://github.com/harshitag90/jest-supertest/issues"
   },
   "homepage": "https://github.com/harshitag90/jest-supertest#readme",
-  "devDependencies": {
+  "dependencies": {
+    "axios": "^0.21.1",
     "jest": "^26.6.3",
     "jest-serial-runner": "^1.1.0",
-    "jest-stare": "^2.2.1",
-    "supertest": "^6.1.3"
+    "jest-stare": "^2.2.1"
   }
 }

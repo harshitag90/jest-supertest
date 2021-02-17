@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1613285861779,
+  "startTime": 1613565459702,
   "success": false,
   "testResults": [
     {
@@ -37,10 +37,10 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1613285866228,
-        "runtime": 2860,
+        "end": 1613565463760,
+        "runtime": 2408,
         "slow": false,
-        "start": 1613285863368
+        "start": 1613565461352
       },
       "skipped": false,
       "snapshot": {
@@ -52,85 +52,38 @@
         "updated": 0,
         "uncheckedKeys": []
       },
-      "testFilePath": "E:\\JestAutomation\\jest-supertest\\__test__\\postAndGet.test.js",
+      "testFilePath": "E:\\JestAutomation\\jest-supertest\\__test__\\Cap_GetPostRequest.test.js",
       "testResults": [
         {
           "ancestorTitles": [
-            "POST request"
+            "GET and POST request"
           ],
-          "duration": 733,
+          "duration": 778,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "POST request Create user data",
+          "fullName": "GET and POST request Post the request",
           "location": null,
           "numPassingAsserts": 0,
           "status": "passed",
-          "title": "Create user data"
+          "title": "Post the request"
         },
         {
           "ancestorTitles": [
-            "GET all user details"
+            "GET and POST request"
           ],
-          "duration": 468,
+          "duration": 192,
           "failureDetails": [],
           "failureMessages": [],
-          "fullName": "GET all user details GET user output",
+          "fullName": "GET and POST request Get the request",
           "location": null,
           "numPassingAsserts": 0,
           "status": "passed",
-          "title": "GET user output"
+          "title": "Get the request"
         }
       ],
       "failureMessage": null
     }
   ],
   "wasInterrupted": false,
-  "coverageMap": {
-    "E:\\JestAutomation\\jest-supertest\\commonTests.js": {
-      "path": "E:\\JestAutomation\\jest-supertest\\commonTests.js",
-      "statementMap": {
-        "0": {
-          "start": {
-            "line": 1,
-            "column": 16
-          },
-          "end": {
-            "line": 1,
-            "column": 36
-          }
-        },
-        "1": {
-          "start": {
-            "line": 2,
-            "column": 16
-          },
-          "end": {
-            "line": 2,
-            "column": 59
-          }
-        },
-        "2": {
-          "start": {
-            "line": 14,
-            "column": 0
-          },
-          "end": {
-            "line": 18,
-            "column": 1
-          }
-        }
-      },
-      "fnMap": {},
-      "branchMap": {},
-      "s": {
-        "0": 1,
-        "1": 1,
-        "2": 1
-      },
-      "f": {},
-      "b": {},
-      "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-      "hash": "e28807a1cd30ec1bc048289b127ccb305bd25d5f"
-    }
-  }
+  "coverageMap": {}
 }
