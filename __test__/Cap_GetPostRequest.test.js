@@ -1,19 +1,48 @@
-const axios = require('axios');
+const axios = require('../axios');
 const fs = require('fs');
+var convert = require('xml-js');
 
 //Create a new user
 describe("GET and POST request", () => {
-  
-let payload = JSON.parse(fs.readFileSync('payload.txt', 'utf-8'))
+  try
+  {
+    
+ let payload = JSON.parse(fs.readFileSync('./TestFiles/payload.txt', 'utf-8'))
+ beforeEach(function () {  
+  console.log("Verify CAP Feed Source")
+ });
+
+ afterEach(function () {
+  console.log("Cap Feed Source is verified")
+});
+
+
   test('Post the request', () => {
-    return axios.post('https://feedjar.herokuapp.com/api/cap',payload)
+    return axios.post('api/cap',payload)
     .then( res => console.log(res) )
   });
+  
 
   test('Get the request', () => {
-    return axios.get('https://feedjar.herokuapp.com/capfeed')
+    return axios.get('capfeed')
           .then( res => 
+            expect(res.data).toBeDefined())
            
-            console.log(res) )
   });
+  
+  test('Validate Sender name of first response', async() => {
+    const resp =  await axios.get('capfeed')
+    .then(resp =>
+      expect(resp.data).toContain('Harshita'));
+    // var options = {ignoreComment: true,compact: true, spaces: 2};
+    // const result = convert.xml2json(resp.data, options); 
+    // await expect(name).toBe('Harshita');
+
+  });
+  
+ }
+catch(err){
+  console.log("Exception : ", err)
+}
 })
+

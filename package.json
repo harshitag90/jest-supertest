@@ -4,7 +4,7 @@
   "description": "My first Jest Project",
   "main": "index.js",
   "jest": {
-    "testURL":"https://feedjar.herokuapp.com/",
+    "testURL": "https://feedjar.herokuapp.com/",
     "verbose": true,
     "testSequencer": "/JestAutomation/jest-supertest/testSequencer.js",
     "coverageDirectory": "/JestAutomation/jest-supertest/coverage/my_reports/",
@@ -40,6 +40,7 @@
     "axios": "^0.21.1",
     "jest": "^26.6.3",
     "jest-serial-runner": "^1.1.0",
-    "jest-stare": "^2.2.1"
+    "jest-stare": "^2.2.1",
+    "xml-js": "^1.6.11"
   }
 }
