@@ -4,7 +4,7 @@
   "description": "My first Jest Project",
   "main": "index.js",
   "jest": {
-    "testURL": "https://feedjar.herokuapp.com/",
+    "testURL": "https://feedjar.azurewebsites.net/",
     "verbose": true,
     "testSequencer": "/JestAutomation/jest-supertest/testSequencer.js",
     "coverageDirectory": "/JestAutomation/jest-supertest/coverage/my_reports/",
@@ -38,9 +38,11 @@
   "homepage": "https://github.com/harshitag90/jest-supertest#readme",
   "dependencies": {
     "axios": "^0.21.1",
+    "fast-xml-parser": "^3.18.0",
     "jest": "^26.6.3",
     "jest-serial-runner": "^1.1.0",
     "jest-stare": "^2.2.1",
+    "jsonpath": "^1.1.0",
     "xml-js": "^1.6.11"
   }
 }
